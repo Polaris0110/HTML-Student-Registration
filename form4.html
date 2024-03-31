@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STUDENT REGISTRATION</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(132, 230, 237);
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 50px auto;
+        background-color: #dadada;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        color: rgb(43, 0, 128);
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        color:rgb(30, 30, 205);
+    }
+    input[type="text"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+    
+    /* Circular button styles */
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Change button color to green on hover */
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: green;
+    }
+
+    /* Adjust spacing between buttons */
+    .form-group input[type="submit"],
+    .form-group input[type="reset"] {
+        margin-right: 20px;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>STUDENT REGISTRATION</h2>
+    <form>
+        <fieldset>
+            <legend>User Information</legend>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="emailid">E-MAIL ID:</label>
+                <input type="text" id="emailid" emailid="emailid" placeholder="Enter your E-MAIL ID">
+            </div>
+            <div class="form-group">   
+                <label for="State">State</label>
+                <select id="state" name="state">
+                    <option value="Ajmer">RAJASTHAN</option>
+                    <option value="Chittorgarh">UTTAR PRADESH</option>
+                    <option value="Hanumangarh">MADHYA PRADESH</option>
+                    <option value="Jhalawar">UTTARAKHAND</option>
+                    <option value="Jhalawar">DELHI NCR</option>
+                    <option value="Jhalawar">HARYANA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="City">City:</label>
+                <select id="gender" name="gender">
+                    <option value="Ajmer">Ajmer</option>
+                    <option value="Chittorgarh">Chittorgarh</option>
+                    <option value="Hanumangarh">Hanumangarh</option>
+                    <option value="Jhalawar">Jaipur</option>
+                    <option value="Jhalawar">Jhalawar</option>
+                    <option value="Jhalawar">Jodhpur</option>
+                    <option value="Kota">Kota</option>
+                    <option value="Udaipur">Udaipur</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </div>
+            <div class="form-group">
+                <label for="Password">Password:</label>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <img src="download.jpeg">
+            <img src="download (1).jpeg">
+        </fieldset>
+        
+    </form>
+</div>
+</body>
+</html>
